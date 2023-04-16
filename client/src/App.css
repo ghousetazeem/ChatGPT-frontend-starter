@@ -1,0 +1,146 @@
+.App {
+  text-align: center;
+  display: flex;
+  background-color: #282c34;
+  color: white;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.side-menu{
+  width: 260px;
+  padding: 10px;
+  background-color: #202123;
+}
+
+.side-menu-button{
+  padding: 13px;
+  border: 1px solid #4d4d4f;
+  border-radius: 5px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.side-menu-button span{
+  padding-left: 6px;
+  padding-right: 12px;
+}
+
+.side-menu-button:hover{
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: ease 0.25s all;
+  cursor: pointer;
+}
+
+.chat-input-holder{
+  margin: 12px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.copyright{
+  font-size: 12px;
+  color: #9a9ba0;
+}
+
+.copyright span{
+  text-decoration: underline;
+}
+
+.chat-input-textarea{
+  resize: none;
+  background-color: #40414f;
+  padding: 14px;
+  color: white;
+  font-size: 16px;
+  width: 66%;
+  border-radius: 5px;
+  border-color: none;
+  border: none;
+  outline: none;
+  box-shadow: 0 0px 6px 0 #303139;
+}
+
+.chatbox{
+  flex: 1;
+  background-color: #343640;
+  position: relative;
+}
+
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.chat-log{
+  text-align: left;
+}
+
+.chat-message.chatgpt{
+  background-color: #444654;
+}
+
+.chat-message-center{
+  padding: 12px;
+  padding-left: 40px;
+  padding-right: 40px;
+  display: flex;
+  max-width: 860px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.avatar{
+  background: white;
+  border-radius: 4px;
+  width: 40px;
+  height: 40px;
+}
+
+.avatar.chatgpt{
+  background: #0da37f;
+  border-radius: 4px;
+  width: 40px;
+  height: 40px;
+}
+
+.message{
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
